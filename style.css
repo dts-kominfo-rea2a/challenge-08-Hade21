@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+#app {
+  background-color: aquamarine;
+  width: 60%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 32px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#todo-title {
+  font-size: 3rem;
+  color: darkslategrey;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+#todo-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 32px;
+}
+
+section {
+  margin-top: 24px;
+}
+
+#todo-input {
+  display: inline-block;
+  width: 60%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: rgba(206, 201, 201, 0.5);
+  padding: 6px;
+  border-radius: 3px 3px 0 0;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+#todo-input:focus {
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid red;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+#todo-submit {
+  margin-top: 16px;
+  width: 50%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: darkslategray;
+  box-shadow: 0px 2px 3px darkslategrey;
+  transition: all;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+#todo-submit:active {
+  transform: translateY(2px);
+  box-shadow: none;
+  transition: all;
+  transition-duration: 100ms;
+}
+
+#todo-submit:hover {
+  background-color: rgba(210, 220, 220, 0.7);
+}
+
+#todo-output {
+  text-align: left;
+  list-style: decimal-leading-zero;
+  width: fit-content;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: darkslategrey;
+}
